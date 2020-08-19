@@ -1,26 +1,33 @@
 import React from 'react';
 import logo from './logo.svg';
+import ReactDOM from 'react-dom';
+import ReactFullpage from '@fullpage/react-fullpage';
 import './App.css';
+import FisrtComponent from "./components/FirstComponent/FirstComponent";
+import SecondComponent from "./components/SecondComponent/SecondComponent";
+import ThirdComponent from "./components/ThirdComponent/ThirdComponent";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+    <ReactFullpage
+        //fullpage options
+        licenseKey = {'YOUR_KEY'}
+        scrollingSpeed = {1000} /* Options here */
+        render={({ state, fullpageApi }) => {
+          return (
+              <ReactFullpage.Wrapper>
+                  <div className='section'>
+                      <FisrtComponent/>
+                  </div>
+                  <div className='section'>
+                      <SecondComponent/>
+                  </div>
+                  <div className='section'>
+                      <ThirdComponent/>
+                  </div>
+              </ReactFullpage.Wrapper>
+          );
+        }}
+    />
+);
 
 export default App;

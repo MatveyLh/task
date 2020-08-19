@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+}
+.bannerWrapper{
+    width: 100%;
+    height: 300px;
+}
+.banner{
+    text-align: center;
+    position: relative;
+
+    margin: auto;
+    width: 1659px;
+    height: 300px;
+    overflow: hidden;
+}
+.img{
+    position: absolute;
+    display: none;
+}
+.item1{background-image: url('https://www.festivalclaca.cat/imgfv/m/166-1668949_5-stars-png-black-reviews-co-uk-stars.png');
+    left: 150px;
+    top: 0;
+    width: 100%;
+    height: 263px;
+    background-repeat: no-repeat;}
+
