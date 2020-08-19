@@ -8,3 +8,9 @@
     height: 350px;
     border: 1px solid #000000;
 }
+
+@media all and (max-width: 560px) {
+    #form {
+        border: none;
+    }
+}
